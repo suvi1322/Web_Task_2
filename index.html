@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact & To-Do App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h1>My Web App</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Tasks</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="grid-layout">
+    <!-- Contact Form -->
+    <section class="contact-form">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label>Name: <input type="text" id="name" required /></label>
+        <label>Email: <input type="email" id="email" required /></label>
+        <label>Phone no: <input type="number" id="Phone no"required /></label>
+        <label>Address:<textarea id="message" rows="4"></textarea></label>
+        <label>Location: <input type="text" id="Location" required /></label>
+        <button type="submit">Submit</button>
+        <p id="formError" class="error-message"></p>
+      </form>
+    </section>
+
+    <!-- To-Do List -->
+    <section class="todo-section">
+      <h2>To-Do List</h2>
+      <input type="text" id="taskInput" placeholder="Enter task" />
+      <button onclick="addTask()">Add Task</button>
+      <ul id="taskList"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
